@@ -31,5 +31,11 @@ class MainActivity : AppCompatActivity() {
                 textValue.text = "OverWeight: %.2f".format(bmi);
             }
         }
+        button2.setOnClickListener {
+            editHeight.setText("");
+            editWeight.setText("");
+            textValue.setText("");
+            imageView2.setImageResource(R.drawable.empty);
+        }
     }
 }

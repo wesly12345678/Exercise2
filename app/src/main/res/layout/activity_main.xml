@@ -38,8 +38,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="268dp"
         android:layout_marginLeft="268dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editWeight" />
 
@@ -58,10 +60,7 @@
         android:id="@+id/textValue"
         android:layout_width="215dp"
         android:layout_height="70dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="92dp"
-        android:text="TextView"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toEndOf="@+id/textBMI"
         app:layout_constraintTop_toBottomOf="@+id/editWeight" />
 
@@ -71,8 +70,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginLeft="104dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textValue"
         app:srcCompat="@drawable/empty" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="40dp"
+        android:text="Reset"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
